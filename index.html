@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3efe5">
+  <meta name="description" content="Phase Garden is a sound-shaping multitool for Windows VST3, macOS VST3, and macOS Audio Unit.">
+  <title>Phase Garden | sound-shaping multitool</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23f3efe5'/%3E%3Cpath d='M32 54V29' stroke='%237e9873' stroke-width='2'/%3E%3Cellipse cx='24' cy='25' rx='7' ry='11' transform='rotate(-35 24 25)' fill='%23d98b82'/%3E%3Cellipse cx='40' cy='19' rx='7' ry='11' transform='rotate(35 40 19)' fill='%238ea983'/%3E%3Ccircle cx='32' cy='52' r='2' fill='%23c8a86a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=audio-dark-20261015">
+  <script src="js/main.js?v=audio-dark-20261015" defer></script>
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="ambient-petals" aria-hidden="true"><span>✿</span><span>❀</span><span>✽</span><span>✿</span><span>❀</span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Phase Garden home">phase garden<span class="wordmark-rule"></span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#instrument">the plugin</a><a href="#playground">playground</a><a href="#download">download</a><button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode"><span class="theme-glyph" aria-hidden="true">☾</span><span id="theme-label">dark garden</span></button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-flower coral-flower" aria-hidden="true">✿</span> a sound-shaping multitool</p>
+        <h1>phase garden</h1>
+        <p class="hero-description">Make a sound your own.</p>
+        <p class="hero-detail">Shift the pitch, move the formants, shape the harmonics, add motion, or keep the attack intact. Phase Garden brings those tools together in one instrument.</p>
+        <div class="hero-links"><a class="button primary" href="#download">Get the plugin <span>↓</span></a><a class="quiet-link" href="#playground">Try the harmonic bed <span>↘</span></a></div>
+        <p class="hero-meta"><span class="status-dot"></span> Free for Windows and macOS · VST3 + AU</p>
+      </div>
+
+      <div class="instrument-preview" id="instrument" aria-label="Illustration of the Phase Garden plugin interface">
+        <div class="plugin-titlebar"><span class="plugin-light"></span><span class="titlebar-name">phase garden</span><div class="titlebar-actions"><span>presets</span><span class="milk-pill"><i></i> milk</span></div><div class="sprig" aria-hidden="true"><span>✿</span><i></i><b></b></div></div>
+        <div class="spectrum-face">
+          <div class="spectrum-top"><span>—</span><div class="anchor-line"><i></i><small>anchor 440 Hz</small></div><span class="follow-pill">↗ follow</span></div>
+          <div class="frequency-plot" aria-hidden="true"><span class="plot-note note-one">no pitch<br>0 partials</span><span class="soft-orb orb-one"></span><span class="soft-orb orb-two"></span><span class="soft-orb orb-three"></span><div class="plot-axis"></div><i class="plot-point point-low">✿<small>low</small></i><i class="plot-point point-mid">✿<small>mid</small></i><i class="plot-point point-high">✿<small>high</small></i><div class="plot-bottom"><span>100</span><span>1k</span><span>10k</span></div></div>
+        </div>
+        <div class="harmonic-face"><div class="rule-heading"><span>harmonics</span><i></i></div><div class="mini-stems" aria-hidden="true"> 
+          <span style="--height:78%"><i>✿</i><b></b><small>1</small></span><span style="--height:69%"><i>✿</i><b></b><small>2</small></span><span style="--height:76%"><i>✿</i><b></b><small>3</small></span><span style="--height:55%"><i>✿</i><b></b><small>4</small></span><span style="--height:61%"><i>✿</i><b></b><small>5</small></span><span style="--height:48%"><i>✿</i><b></b><small>6</small></span><span style="--height:56%"><i>✿</i><b></b><small>7</small></span><span style="--height:39%"><i>✿</i><b></b><small>8</small></span><span style="--height:48%"><i>✿</i><b></b><small>9</small></span><span style="--height:32%"><i>✿</i><b></b><small>10</small></span><span style="--height:40%"><i>✿</i><b></b><small>11</small></span><span style="--height:25%"><i>✿</i><b></b><small>12</small></span><span style="--height:33%"><i>✿</i><b></b><small>13</small></span><span style="--height:19%"><i>✿</i><b></b><small>14</small></span><span style="--height:25%"><i>✿</i><b></b><small>15</small></span><span style="--height:14%"><i>✿</i><b></b><small>16</small></span>
+        </div></div>
+        <div class="knob-face" aria-hidden="true">
+          <div class="knob-group"><label>pitch</label><div class="knob-row"><div class="knob rose"><span>shift</span><i></i><b>✿</b><small>0.0 st</small></div><div class="knob rose"><span>formant</span><i></i><b>✿</b><small>0.0 st</small></div><div class="knob rose"><span>stretch</span><i></i><b>✿</b><small>0%</small></div><div class="knob rose active"><span>pivot</span><i></i><b>✿</b><small>440 Hz</small></div><div class="knob rose"><span>bloom</span><i></i><b>✿</b><small>0%</small></div></div></div>
+          <div class="knob-group"><label>voice</label><div class="knob-row"><div class="knob fern"><span>tone</span><i></i><b>✿</b><small>0%</small></div><div class="knob fern"><span>odd / even</span><i></i><b>✿</b><small>both</small></div><div class="knob fern"><span>phase</span><i></i><b>✿</b><small>0%</small></div><div class="knob fern"><span>emphasis</span><i></i><b>✿</b><small>0%</small></div></div></div>
+          <div class="knob-group"><label>motion</label><div class="knob-row"><div class="knob pollen"><span>drift</span><i></i><b>✿</b><small>0%</small></div><div class="knob pollen"><span>twist</span><i></i><b>✿</b><small>0%</small></div><div class="knob pollen"><span>ghost</span><i></i><b>✿</b><small>off</small></div></div></div>
+          <div class="knob-group"><label>stability</label><div class="knob-row"><div class="knob fern"><span>lock</span><i></i><b>✿</b><small>0%</small></div><div class="knob fern"><span>transients</span><i></i><b>✿</b><small>off</small></div></div></div>
+          <div class="knob-group"><label>output</label><div class="knob-row"><div class="knob pollen"><span>drive</span><i></i><b>✿</b><small>0%</small></div><div class="knob violet"><span>mix</span><i></i><b>✿</b><small>100%</small></div></div></div>
+        </div>
+        <div class="preview-foot"><span>phase garden · vst3</span><span>16 harmonics · 1.0</span></div>
+      </div>
+    </section>
+
+    <section id="playground" class="playground-section">
+      <div class="section section-playground">
+        <div class="section-topline"><span></span><span></span><span>playground</span></div>
+        <div class="playground-heading"><div><h2>Try your own sound.</h2><p>Load a short audio file from your device, then shape it with the controls below. Or leave the upload empty and play the built-in harmonic sketch. Your audio stays in this browser; nothing is sent to a server. This is a browser approximation, not the full plugin engine.</p></div><div class="root-readout"><span>FILTER ROOT</span><strong id="root-readout-value">110 <small>Hz</small></strong><span id="root-note-name">A2</span></div></div>
+        <div class="synth-panel">
+          <div class="synth-topline"><div><span class="live-led"></span><span id="synth-status" aria-live="polite">Ready to play</span></div><div class="synth-top-right"><span id="source-kind">built-in tone</span><span>/</span><span id="synth-root-label">110 Hz root</span></div></div>
+          <div class="sample-loader" id="sample-loader">
+            <div class="sample-loader-main"><span class="sample-loader-mark" aria-hidden="true">♫</span><div class="sample-loader-copy"><strong>Bring in a sound</strong><p>Choose an audio file from your computer. It stays here in your browser.</p><div class="sample-file-line"><span id="sample-file-name">No audio selected</span><span id="sample-file-duration"></span></div></div></div>
+            <div class="sample-loader-actions"><label class="button sample-pick-button" for="audio-file">Choose audio <span>↑</span></label><input class="visually-hidden" id="audio-file" type="file" accept="audio/*,.wav,.wave,.mp3,.m4a,.aac,.aif,.aiff,.ogg,.flac,.webm"><button class="sample-clear-button" id="clear-audio" type="button" disabled>Use built-in tone</button></div>
+            <div class="sample-progress" id="sample-progress-wrap" hidden><span id="sample-current-time">0:00</span><div class="sample-progress-track"><span id="sample-progress-fill"></span></div><span id="sample-total-time">0:00</span></div>
+            <p class="sample-loader-note" id="sample-loader-note" aria-live="polite">Works with browser-supported audio formats such as WAV, MP3, and M4A.</p>
+          </div>
+          <div class="spectrum-holder"><canvas id="harmonic-canvas" aria-label="Interactive harmonic stems. Drag a stem up or down to change its level."></canvas><div class="canvas-help"><span>low</span><span>drag a flower to shape the sound</span><span>high</span></div></div>
+          <div class="synth-controls"><div class="preset-group" aria-label="Starting sounds"><span class="control-label">Start with</span><button class="preset-button is-active" data-preset="saw">saw</button><button class="preset-button" data-preset="hollow">odd only</button><button class="preset-button" data-preset="sine">sine</button><button class="preset-button" data-preset="bell">bell</button></div><button class="button primary listen-button" id="listen-button"><span class="listen-symbol" aria-hidden="true">▶</span><span id="listen-label">Listen</span></button></div>
+          <details class="play-controls" open>
+            <summary>Shape the sound <span>move a control while it plays</span></summary>
+            <div class="control-matrix">
+              <fieldset class="control-card control-card-pitch">
+                <legend>Pitch and spectrum</legend>
+                <label class="control-tile" for="param-shift"><span class="control-name">Shift</span><output id="out-shift">0 st</output><input id="param-shift" type="range" min="-12" max="12" step="0.5" value="0"></label>
+                <label class="control-tile" for="param-formant"><span class="control-name">Formant</span><output id="out-formant">0 st</output><input id="param-formant" type="range" min="-12" max="12" step="0.5" value="0"></label>
+                <label class="control-tile" for="param-stretch"><span class="control-name">Stretch</span><output id="out-stretch">0%</output><input id="param-stretch" type="range" min="-1" max="1" step="0.01" value="0"></label>
+                <div class="control-tile pivot-tile"><label for="param-pivot" class="control-name">Pivot</label><output id="out-pivot">Follow</output><input id="param-pivot" type="range" min="80" max="1000" step="1" value="440"><label class="follow-control" for="param-follow"><input id="param-follow" type="checkbox" checked><span>Follow root</span></label></div>
+                <label class="control-tile" for="param-bloom"><span class="control-name">Bloom</span><output id="out-bloom">0%</output><input id="param-bloom" type="range" min="-1" max="1" step="0.01" value="0"></label>
+                <label class="control-tile" for="param-tone"><span class="control-name">Tone</span><output id="out-tone">0%</output><input id="param-tone" type="range" min="-1" max="1" step="0.01" value="0"></label>
+              </fieldset>
+              <fieldset class="control-card control-card-shape">
+                <legend>Partial shape</legend>
+                <label class="control-tile" for="param-split"><span class="control-name">Odd / even</span><output id="out-split">Both</output><input id="param-split" type="range" min="-1" max="1" step="0.01" value="0"></label>
+                <label class="control-tile" for="param-phase"><span class="control-name">Phase</span><output id="out-phase">0%</output><input id="param-phase" type="range" min="0" max="1" step="0.01" value="0"></label>
+                <label class="control-tile" for="param-emphasis"><span class="control-name">Emphasis</span><output id="out-emphasis">0%</output><input id="param-emphasis" type="range" min="-1" max="1" step="0.01" value="0"></label>
+                <label class="control-tile" for="param-lock"><span class="control-name">Lock</span><output id="out-lock">0%</output><input id="param-lock" type="range" min="0" max="1" step="0.01" value="0"></label>
+              </fieldset>
+              <fieldset class="control-card control-card-motion">
+                <legend>Motion and output</legend>
+                <label class="control-tile" for="param-drift"><span class="control-name">Drift</span><output id="out-drift">0%</output><input id="param-drift" type="range" min="0" max="1" step="0.01" value="0"></label>
+                <label class="control-tile" for="param-twist"><span class="control-name">Twist</span><output id="out-twist">0%</output><input id="param-twist" type="range" min="-1" max="1" step="0.01" value="0"></label>
+                <label class="control-tile" for="param-ghost"><span class="control-name">Ghost</span><output id="out-ghost">Off</output><input id="param-ghost" type="range" min="0" max="1" step="0.01" value="0"></label>
+                <label class="control-tile" for="param-trans"><span class="control-name">Transients</span><output id="out-trans">0%</output><input id="param-trans" type="range" min="0" max="1" step="0.01" value="0"></label>
+                <label class="control-tile" for="param-drive"><span class="control-name">Drive</span><output id="out-drive">0%</output><input id="param-drive" type="range" min="0" max="1" step="0.01" value="0"></label>
+                <label class="control-tile" for="param-mix"><span class="control-name">Mix</span><output id="out-mix">100%</output><input id="param-mix" type="range" min="0" max="1" step="0.01" value="1"></label>
+              </fieldset>
+            </div>
+            <div class="play-control-actions"><button class="preset-button" id="reset-controls" type="button">Reset controls</button><span>Changes are heard in the browser demo.</span></div>
+          </details>
+          <p class="synth-footnote" id="synth-footnote">Choose an audio file or press Listen for the built-in tone. The controls affect whichever source is active.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="downloads-section section" id="download">
+      <div class="section-topline"><span></span><span></span><span>downloads</span></div>
+      <div class="download-heading"><div><h2>Download the plugin.</h2><p>Choose the plugin format for your system. Audio Unit is for compatible macOS DAWs.</p></div><span class="free-note">free download</span></div>
+      <div class="download-grid">
+        <article class="download-card"><div class="platform-line"><span>windows</span><span class="platform-symbol">⊞</span></div><h3>Windows</h3><p class="format">vst3 · zip archive</p><p class="download-description">For 64-bit Windows. Extract the ZIP and move <code>Phase Garden.vst3</code> into your system VST3 folder.</p><a class="button download-button" href="downloads/Phase_Garden_vst3.zip" download>Download .zip <span>↓</span></a><div class="install-location"><label>Install location</label><code>C:\Program Files\Common Files\VST3</code></div></article>
+        <article class="download-card"><div class="platform-line"><span>macOS</span><span class="platform-symbol">⌘</span></div><h3>macOS</h3><p class="format">vst3 · tar archive</p><p class="download-description">Universal build for Intel and Apple Silicon Macs. Extract the TAR and move the bundle into your user VST3 folder.</p><a class="button download-button" href="downloads/Phase-Garden-macOS-VST3.tar.gz" download>Download .tar <span>↓</span></a><div class="install-location"><label>Install location</label><code>~/Library/Audio/Plug-Ins/VST3</code></div><a class="mac-link" href="#mac-setup">macOS setup note <span>↘</span></a></article>
+        <article class="download-card"><div class="platform-line"><span>macOS</span><span class="platform-symbol">⌘</span></div><h3>Audio Unit</h3><p class="format">au · tar.gz archive</p><p class="download-description">For compatible macOS DAWs that host Audio Units. Extract the archive and move <code>Phase Garden.component</code> into your Components folder.</p><a class="button download-button" href="downloads/Phase-Garden-macOS-AU.tar.gz" download>Download AU <span>↓</span></a><div class="install-location"><label>Install location</label><code>~/Library/Audio/Plug-Ins/Components</code></div><a class="mac-link" href="#mac-setup">macOS setup note <span>↘</span></a></article>
+      </div>
+      <div class="mac-setup" id="mac-setup"><div class="setup-title"><span class="terminal-mark">⌘</span><div><span class="setup-kicker">macOS / Terminal</span><h3>If your DAW doesn't see it</h3></div></div><p>Downloaded plugins can carry a macOS quarantine attribute. For a build you trust, run the command below after replacing the example path with the actual location of the <code>.vst3</code> or <code>.component</code> bundle. This removes that attribute; it does not guarantee that every DAW will detect or load the plugin.</p><div class="terminal-window"><div class="terminal-title"><span></span><span></span><span></span><label>Terminal</label></div><div class="command-row"><code id="quarantine-command">sudo xattr -rd com.apple.quarantine /path/to/your/plugin</code><button id="copy-command" class="copy-button" type="button"><span id="copy-label">copy</span></button></div></div><ol class="setup-list"><li><span>1</span><p>Keep a space after <code>com.apple.quarantine</code>.</p></li><li><span>2</span><p>Replace <code>/path/to/your/plugin</code> with the full path to your installed <code>.vst3</code> or <code>.component</code> bundle. Dragging the bundle from Finder into Terminal inserts its path.</p></li><li><span>3</span><p>Press Return, enter your Mac password if prompted, then restart your DAW and rescan its plug-ins (VST3 or Audio Units, depending on the format).</p></li></ol><details class="path-example"><summary>Example for the default user VST3 folder</summary><code>sudo xattr -rd com.apple.quarantine "$HOME/Library/Audio/Plug-Ins/VST3/Phase Garden.vst3"</code><p>Use only if this is the actual location. Keep quotes around paths containing spaces.</p></details><p class="safety-note">Only remove quarantine from software you trust. If the plugin still does not appear, check the DAW's VST3 folder settings and rescan.</p></div>
+      <div class="install-steps"><h3>Installation, in brief</h3><div><span>01</span><p>Download and extract the archive.</p></div><div><span>02</span><p>Move <code>Phase Garden.vst3</code> into the VST3 folder shown above.</p></div><div><span>03</span><p>On macOS, follow the Terminal note if quarantine is the issue.</p></div><div><span>04</span><p>Restart your DAW and rescan its VST3 plugins.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-sprig" aria-hidden="true">⌁ ✿ ⌁</div><a class="footer-wordmark" href="#top">phase garden</a><p>a sound-shaping multitool</p><div class="footer-bottom"><span>Windows and macOS</span><a href="#top">Back to top ↑</a><span>Phase Garden / VST3 + AU</span></div></footer>
+</body>
+</html>
