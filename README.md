@@ -1,4 +1,4 @@
-# Phase Garden (web)
+# Phase Garden website
 
 A static HTML, CSS, and JavaScript site. It does not need Node, npm, or a build step.
 

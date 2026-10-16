@@ -291,3 +291,20 @@ body[data-theme="dark"] .downloads-section{background:#22251f}body[data-theme="d
 body[data-theme="dark"] .mac-setup{background:#2a2e27;border-color:#4d5345}body[data-theme="dark"] .mac-setup>p,body[data-theme="dark"] .setup-list p,body[data-theme="dark"] .path-example p,body[data-theme="dark"] .safety-note{color:#bdaf9a!important}body[data-theme="dark"] .setup-title h3,body[data-theme="dark"] .install-steps h3{color:#eee2cf}body[data-theme="dark"] .terminal-mark{border-color:#5b5c4a}body[data-theme="dark"] .path-example>code{background:#393d33}body[data-theme="dark"] .install-steps>div{border-color:#4b5144}
 body[data-theme="dark"] .site-footer{background:#292d26;border-color:#474d41}body[data-theme="dark"] .site-footer>p,body[data-theme="dark"] .footer-bottom{color:#b5a58f}body[data-theme="dark"] .footer-bottom{border-color:#474d41}
 @media(prefers-reduced-motion:reduce){.sample-loader,.sample-progress-track>span,.theme-toggle{transition:none!important}}
+
+
+/* Creator and community links sit just beneath the hero copy: easy to find, but not part of the top nav or footer. */
+.maker-strip{position:relative;display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:7px;width:max-content;max-width:100%;min-height:34px;margin:18px 0 0;padding:7px 13px;border:1px solid #d8cbb8;border-radius:14px;background:#e9e2d4;color:#867766;font:15px/1.25 var(--hand);letter-spacing:.015em;text-align:left}
+.maker-credit-copy{white-space:nowrap}
+.maker-strip .maker-name{color:#665447}
+.maker-strip a{display:inline-flex;align-items:center;gap:3px;color:#71866a;text-decoration:none;border-bottom:1px solid rgb(126 152 115 / 45%);transition:color .2s,border-color .2s}
+.maker-strip a:hover{color:#b36f67;border-color:#b36f67}
+.maker-divider{color:#b7a58f}
+.maker-link-mark{font-size:11px;line-height:1}
+body[data-theme="dark"] .maker-strip{background:#292d26;border-color:#474d41;color:#b7a88f}
+body[data-theme="dark"] .maker-strip .maker-name{color:#eee4d3}
+body[data-theme="dark"] .maker-strip a{color:#b2c2a3;border-color:rgb(178 194 163 / 45%)}
+body[data-theme="dark"] .maker-strip a:hover{color:#e19a90;border-color:#e19a90}
+body[data-theme="dark"] .maker-divider{color:#7e866f}
+@media(max-width:680px){.maker-strip{margin-top:16px;gap:7px;padding:7px 11px;font-size:14px}}
+@media(max-width:420px){.maker-strip{gap:6px;min-height:30px;border-radius:12px;font-size:13px;padding:7px 10px}}
